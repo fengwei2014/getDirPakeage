@@ -1,0 +1,9 @@
+		
+		"dojo/domReady"
+    ],    
+    customBase: true,    
+    boot: true   
+   }
+  } 
+ };
+})();
