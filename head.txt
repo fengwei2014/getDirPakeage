@@ -1,0 +1,41 @@
+var profile = (function(){
+ return {
+ basePath: "../dojo19", 
+  releaseDir: "../l-portal/release",
+  action: "release",
+  cssOptimize: "comments",
+  mini: true,
+  stripConsole: "all",
+  optimize: 'shrinksafe',
+  layerOptimize: 'shrinksafe',
+  selectorEngine: "acme",
+
+  staticHasFeatures: {
+   'dojo-trace-api': 0,
+   'dojo-log-api': 0,
+   'dojo-publish-privates': 0,
+   'dojo-sync-loader': 0,
+   'dojo-xhr-factory': 0,
+   'dojo-test-sniff': 0
+  },
+  packages:[{
+			name: "dojo",
+			location: "dojo"
+		},{
+			name: "dijit",
+			location: "dijit"
+		},{
+			name: "dojox",
+			location: "dojox"
+		},{
+			name: "slf",
+			location: "../l-portal/script"
+		}
+  ],
+
+  layers:
+  {
+ 	"dojo/mylportal":
+   {
+    include: 
+    [
