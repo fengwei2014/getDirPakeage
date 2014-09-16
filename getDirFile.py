@@ -42,7 +42,7 @@ def getDirList(textlist, number, file_out):
         text = replaceText(textlist[i])
         file_out.write(text + '\n')
 #
-def traverse(path,depth=0):
+def traverse(path):
     parePath = path
     result = parePath.replace('\\','/')
     reg = r'^\S+\.js$'
@@ -52,12 +52,11 @@ def traverse(path,depth=0):
     
     if(os.path.isdir(path)):
         for item in os.listdir(path):
-            traverse(path+'/'+item, depth+1)
+            traverse(path+'/'+item)
  
 
 #path:目标js文件所在的文件路径
 path = 'F:\WMSPROJECT\WMS-PORTAL\WebContent\script'
-depth = 0
 fileWriteIn = open('jsNameList.txt','w')
 traverse(path,depth)
 fileWriteIn.close()
