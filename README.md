@@ -7,7 +7,7 @@ get directory file names and join some files togeter
 
 必须包含文件：head.txt、endFile.txt、getDirFile.py
 
-Python 2.7.7 版本测试通过，如果不能正常运行，很确认版本
+Python 2.7.7 版本测试通过，如果不能正常运行，请确认版本
 
 @date:2014.9.16 
 
